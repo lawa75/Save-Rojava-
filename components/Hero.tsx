@@ -1,22 +1,23 @@
 
 import React from 'react';
 import { ChevronDown, Heart } from 'lucide-react';
-import { DONATE_URL } from '../constants';
+import { DONATE_URL } from '../constants.tsx';
 
 const Hero: React.FC = () => {
   return (
-    <div id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <div id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
       {/* Background Video Overlay */}
       <div className="absolute inset-0 bg-black/70 z-10" />
       
-      {/* Placeholder Video */}
+      {/* Background Layers */}
       <div className="absolute inset-0 z-0">
         <video
           autoPlay
           muted
           loop
           playsInline
-          className="object-cover w-full h-full opacity-60"
+          className="object-cover w-full h-full opacity-60 bg-[#0a0a0a]"
+          poster="https://images.unsplash.com/photo-1542281286-9e0a16bb7366?auto=format&fit=crop&q=80&w=2000"
         >
           <source src="https://assets.mixkit.co/videos/preview/mixkit-dust-particles-moving-slowly-in-the-air-at-night-42171-large.mp4" type="video/mp4" />
         </video>
@@ -27,12 +28,15 @@ const Hero: React.FC = () => {
         <div className="inline-block px-4 py-1.5 rounded-full bg-kurdistan-red/20 border border-kurdistan-red text-kurdistan-red text-sm font-bold tracking-widest uppercase mb-6 animate-pulse">
           Urgent Assistance Needed
         </div>
+        
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-extrabold text-white tracking-tighter mb-6">
-          SAVE <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#ED2024] via-[#FEBD11] to-[#278E43] drop-shadow-[0_2px_10px_rgba(254,189,17,0.3)]">ROJAVA</span>
+          SAVE <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-kurdistan-red via-kurdistan-yellow to-kurdistan-green drop-shadow-[0_2px_15px_rgba(254,189,17,0.4)]">ROJAVA</span>
         </h1>
+
         <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
           Providing critical aid and survival resources to the families caught in the crossfire. Your contribution saves lives directly.
         </p>
+        
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href={DONATE_URL}

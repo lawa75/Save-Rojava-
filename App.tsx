@@ -1,17 +1,17 @@
 
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import WhoAreWe from './components/WhoAreWe';
-import NewsFeed from './components/NewsFeed';
-import Transparency from './components/Transparency';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar.tsx';
+import Hero from './components/Hero.tsx';
+import WhoAreWe from './components/WhoAreWe.tsx';
+import NewsFeed from './components/NewsFeed.tsx';
+import Transparency from './components/Transparency.tsx';
+import Footer from './components/Footer.tsx';
 import { Heart } from 'lucide-react';
-import { DONATE_URL } from './constants';
+import { DONATE_URL } from './constants.tsx';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen relative selection:bg-kurdistan-yellow selection:text-black">
+    <div className="min-h-screen relative selection:bg-kurdistan-yellow selection:text-black bg-[#0a0a0a]">
       <Navbar />
       
       <main>
