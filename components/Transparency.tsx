@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { ExternalLink, FileCheck, Info, Sparkles } from 'lucide-react';
-import { RECEIPTS } from '../constants';
+import { RECEIPTS } from '../constants.tsx';
 
 const Transparency: React.FC = () => {
   const hasReceipts = RECEIPTS.length > 0;

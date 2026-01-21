@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { LOGO_URL, DONATE_URL } from '../constants';
+import { LOGO_URL, DONATE_URL } from '../constants.tsx';
 import { Heart, Globe, ShieldCheck } from 'lucide-react';
 
 const Footer: React.FC = () => {

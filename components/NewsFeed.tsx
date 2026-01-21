@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
 import { Bell, ArrowRight, X, Calendar } from 'lucide-react';
-import { NEWS_UPDATES } from '../constants';
-import { NewsUpdate } from '../types';
+import { NEWS_UPDATES } from '../constants.tsx';
+import { NewsUpdate } from '../types.ts';
 
 const NewsFeed: React.FC = () => {
   const [selectedNews, setSelectedNews] = useState<NewsUpdate | null>(null);

@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Heart } from 'lucide-react';
-import { NAV_LINKS, LOGO_URL, DONATE_URL } from '../constants';
+import { NAV_LINKS, LOGO_URL, DONATE_URL } from '../constants.tsx';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
