@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar.tsx';
 import Hero from './components/Hero.tsx';
 import WhoAreWe from './components/WhoAreWe.tsx';
@@ -59,6 +60,8 @@ const App: React.FC = () => {
       </main>
 
       <Footer />
+
+      <Analytics />
 
       {/* Floating Action Button for Mobile */}
       <div className="fixed bottom-6 right-6 z-40 md:hidden">
