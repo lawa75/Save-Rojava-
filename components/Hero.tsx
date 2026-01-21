@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
         </div>
         
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-extrabold text-white tracking-tighter mb-6">
-          SAVE <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-kurdistan-red via-kurdistan-yellow to-kurdistan-green drop-shadow-[0_2px_15px_rgba(254,189,17,0.4)]">ROJAVA</span>
+          SAVE <span className="hero-gradient-text inline-block drop-shadow-[0_2px_15px_rgba(254,189,17,0.4)]">ROJAVA</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed font-light">

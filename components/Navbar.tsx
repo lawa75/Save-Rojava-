@@ -16,13 +16,13 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/90 backdrop-blur-md py-3 shadow-2xl' : 'bg-transparent py-5'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/95 backdrop-blur-md py-3 shadow-2xl' : 'bg-transparent py-5'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center text-white">
           <div className="flex items-center">
             <a href="#home" className="flex items-center space-x-3">
               <img src={LOGO_URL} alt="Save Rojava" className="h-10 w-auto" />
-              <span className="hidden md:block font-extrabold text-xl tracking-tighter">SAVE ROJAVA</span>
+              <span className="hidden md:block font-extrabold text-xl tracking-tighter text-white">SAVE ROJAVA</span>
             </a>
           </div>
 
@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden bg-black/95 backdrop-blur-xl border-t border-white/10">
+        <div className="lg:hidden bg-black/98 backdrop-blur-xl border-t border-white/10">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {NAV_LINKS.map((link) => (
               <a
@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
               >
                 <Heart className="w-5 h-5 mr-2" fill="currentColor" />
                 Donate Now
-              </a >
+              </a>
             </div>
           </div>
         </div>

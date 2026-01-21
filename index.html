@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #0a0a0a; color: #ffffff;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,9 +28,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
+    :root {
+      color-scheme: dark;
+    }
     body {
       background-color: #0a0a0a;
       color: #ffffff;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
     }
     
     /* Custom scrollbar */
@@ -46,6 +51,15 @@
     }
     ::-webkit-scrollbar-thumb:hover {
       background: #ED2024;
+    }
+
+    /* Fallback for the text gradient to ensure it never renders as black */
+    .hero-gradient-text {
+      background: linear-gradient(to right, #ED2024, #FEBD11, #278E43);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: #FEBD11; /* Fallback color if clipping fails */
     }
   </style>
 <script type="importmap">
