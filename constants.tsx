@@ -39,7 +39,7 @@ export const RECEIPTS: Receipt[] = [
   {
     id: 'TX-ROJ-001',
     weekRange: 'Jan 01 - Jan 07, 2026',
-    amount: '$1,250.00',
+    amount: '$0.00',
     date: '2026-01-08',
     status: 'Completed',
     proofUrl: '#'
