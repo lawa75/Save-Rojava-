@@ -13,7 +13,7 @@ const WhoAreWe: React.FC = () => {
               <span>The Mission</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-black text-white leading-tight">
-              Founded by <span className="text-kurdistan-red">Lawen Shwany</span> for the People.
+              A Direct Lifeline to the <span className="text-kurdistan-red">People of Rojava</span>.
             </h2>
             <div className="relative p-8 bg-white/5 border-l-4 border-kurdistan-yellow rounded-r-2xl italic">
               <Quote className="absolute -top-4 -left-4 w-10 h-10 text-kurdistan-yellow/30" />

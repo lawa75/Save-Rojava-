@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
 
         <div className="pt-10 border-t border-white/5 text-center md:flex md:justify-between md:items-center">
           <p className="text-gray-600 text-xs mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Save Rojava Project. Founded by Lawen Shwany.
+            &copy; {new Date().getFullYear()} Save Rojava Project. All rights reserved.
           </p>
           <div className="flex justify-center space-x-6 text-gray-600 text-xs">
             <a href="#" className="hover:text-white">Privacy Policy</a>
